@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_save_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bebe.databasestore.SaveData"
+    android:background="#696969">
+
+    <TextView
+        android:text="@string/add_items_to_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button3"
+        android:onClick="saveData"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/item_id"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/the_id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/item_name"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/the_name"
+        android:layout_below="@+id/the_id"
+        android:layout_alignLeft="@+id/the_id"
+        android:layout_alignStart="@+id/the_id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/item_quantity"
+        android:ems="10"
+        android:id="@+id/the_quantity"
+        android:layout_below="@+id/the_name"
+        android:layout_alignLeft="@+id/the_name"
+        android:layout_alignStart="@+id/the_name"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/item_price"
+        android:ems="10"
+        android:id="@+id/the_price"
+        android:layout_below="@+id/the_quantity"
+        android:layout_alignLeft="@+id/the_quantity"
+        android:layout_alignStart="@+id/the_quantity"
+        android:layout_marginTop="56dp" />
+
+</RelativeLayout>

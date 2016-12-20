@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DataBaseStore</string>
+    <string name="database">Database</string>
+    <string name="add_items">Add Items</string>
+    <string name="view_items">View Items</string>
+    <string name="add_items_to_db">Add Items</string>
+    <string name="save">Save</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_id">Item ID</string>
+    <string name="item_price">Item Price</string>
+    <string name="item_quantity">Item Quantity</string>
+</resources>
